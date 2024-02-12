@@ -1,0 +1,36 @@
+[
+    {
+      "name" : "William",
+      "category" : "Sick Leave",
+      "type" : "Paid Leave",
+      "dateFrom" : "2024-03-01",
+      "dateTo" : "2024-03-03",
+      "days" : "1",
+      "anualLeaves" : "10",
+      "totalLeaves" : "8",
+      "remain": "2"
+    },
+    {
+        "name" : "John Wick",
+        "category" : "Sick Leave",
+        "type" : "Paid Leave",
+        "dateFrom" : "2024-03-01",
+        "dateTo" : "2024-03-03",
+        "days" : "3",
+        "anualLeaves" : "10",
+        "totalLeaves" : "2",
+        "remain": "2"
+      }, 
+      {
+        "name" : "Mary",
+        "category" : "Sick Leave",
+        "type" : "Unpaid Leave",
+        "dateFrom" : "2024-03-01",
+        "dateTo" : "2024-03-03",
+        "days" : "5",
+        "anualLeaves" : "10",
+        "totalLeaves" : "5",
+        "remain": "2"
+      }
+
+  ]

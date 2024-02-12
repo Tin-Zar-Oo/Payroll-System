@@ -1,0 +1,53 @@
+<h3 class="d-flex justify-content-between">
+    <span><i class="bi-calendar-check"></i> Attendance Management</span>
+    <div>
+        <button class="btn btn-success">
+            <i class="bi-arrow-up-square"></i> Export
+        </button>
+    </div>
+</h3>
+
+<!-- Search Bar -->
+<app-card>
+    <form action="#" class="row">
+      <!-- Status -->
+      <div class="col-auto">
+        <label class="form-label">Status</label>
+        <select class="form-select">
+          <option value="">All Status</option>
+          @for (item of statusList; track $index) {
+            <option [value]="item">{{item}}</option>
+          }
+        </select>
+      </div>
+  
+      <!-- Date From -->
+      <div class="col-auto">
+        <label class="form-label">Date From</label>
+        <input type="date" class="form-control">
+      </div>
+  
+      <!-- Date To -->
+      <div class="col-auto">
+        <label class="form-label">Date To</label>
+        <input type="date" class="form-control">
+      </div>
+      <!-- Name -->
+      <div class="col-auto">
+        <label class="form-label">Name</label>
+        <input type="tel" placeholder="Search Name" class="form-control">
+      </div>
+  
+      <div class="col btn-wrapper">
+        <!-- Search Button -->
+        <button class="btn btn-outline-primary me-2">
+          <i class="bi-search"></i> Search
+        </button>
+      </div>
+    </form>
+  </app-card>
+  
+  <!-- Pagination -->
+<div>
+    <app-pagination></app-pagination>
+  </div>

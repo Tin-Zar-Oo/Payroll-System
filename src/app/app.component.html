@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand" style="background-color: #fe5406;">
+    <div class="container-fluid">
+        <!------------left side menu ------>
+        <a [routerLink]="['/home']" class="navbar-brand">
+            <i class="bi-house"> PayRoll Management System</i>
+        </a>
+
+        <!--------right side menu---->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a [routerLink]="['/department']" routerLinkActive="active" class="nav-link">  <i class="bi-building"></i> Department </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/employee']" routerLinkActive="active"  class="nav-link"><i class="bi-people"></i> Employee</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/attendance']" routerLinkActive="active" class="nav-link"><i class="bi-calendar-check"></i> Attendance</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/leave']" routerLinkActive="active" class="nav-link"><i class="bi-calendar-minus"></i> Leave</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/payroll']" routerLinkActive="active" class="nav-link"><i class="bi-envelope"></i> PayRoll</a>
+              </li>
+            <li class="nav-item dropdown" >
+                <a [routerLink]="['/master-data']" routerLinkActive="active" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" ><i class="bi-database"></i> Master Data</a>
+                <ul class="dropdown-menu" style="background-color: #fe5406;">
+                    <li>
+                        <a [routerLink]="['/position']" routerLinkActive="active" class="dropdown-item"><i class="bi-briefcase"></i> Position</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/allowance']" routerLinkActive="active" class="dropdown-item"><i class="bi-envelope-heart"></i> Allowance</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/deduction']" routerLinkActive="active" class="dropdown-item"><i class="bi-envelope-exclamation"></i> Deduction</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/holiday']" routerLinkActive="active" class="dropdown-item"><i class="bi-calendar-heart"></i> Holiday</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/sign-out']" routerLinkActive="active" class="nav-link"><i class="bi-lock"></i> Sign Out</a>
+            </li>
+          </ul>
+
+      
+    </div>
+</nav>
+
+<div class="container-fluid mt-3">
+    <router-outlet></router-outlet>
+  </div>
+  

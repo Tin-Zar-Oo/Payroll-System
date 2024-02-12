@@ -1,0 +1,26 @@
+[
+    {
+      "name" : "John",
+      "date" : "2024-02-10",
+      "checkIn" : "9:00",
+      "checkOut" : "16:00",
+      "status" : "Attend",
+      "Remark" : ""
+    },
+    {
+      "name" : "Smith",
+      "date" : "2024-02-10",
+      "checkIn" : "9:30",
+      "checkOut" : "16:00",
+      "status" : "Late",
+      "Remark" : ""
+    },
+    {
+      "name" : "Naomi",
+      "date" : "2024-02-10",
+      "checkIn" : "",
+      "checkOut" : "",
+      "status" : "Absent",
+      "Remark" : ""
+    }
+  ]
