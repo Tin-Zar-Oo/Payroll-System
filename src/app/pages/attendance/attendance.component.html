@@ -10,16 +10,16 @@
 <!-- Search Bar -->
 <app-card>
     <form action="#" class="row">
-      <!-- Status -->
-      <div class="col-auto">
-        <label class="form-label">Status</label>
-        <select class="form-select">
-          <option value="">All Status</option>
-          @for (item of statusList; track $index) {
-            <option [value]="item">{{item}}</option>
-          }
-        </select>
-      </div>
+         <!-- Status -->
+    <div class="col-auto">
+      <label class="form-label">Status</label>
+      <select class="form-select">
+        <option value="">All Status</option>
+        @for (item of statusList; track $index) {
+          <option [value]="item">{{item}}</option>
+        }
+      </select>
+    </div>
   
       <!-- Date From -->
       <div class="col-auto">
@@ -47,6 +47,39 @@
     </form>
   </app-card>
   
+
+  <!-- Search Result -->
+<table class="table table-bordered table-hover mt-2">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Check In</th>
+      <th>Check Out</th>
+      <th>Status</th>
+      <th>Remark</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (item of dataList; track $index) {
+      <tr>
+        <td>{{item.name}}</td>
+        <td>{{item.date}}</td>
+        <td>{{item.checkIn}}</td>
+        <td>{{item.checkOut}}</td>
+        <td>{{item.status}}</td>
+        <td>{{item.remark}}</td>
+        <td class="text-center">
+          <a [routerLink]="['/attendance', 'edit']"  class="icon-link">
+            <i class="bi-pencil"></i>
+          </a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
   <!-- Pagination -->
 <div>
     <app-pagination></app-pagination>

@@ -2,14 +2,15 @@ import { Component } from '@angular/core';
 import { AttendanceService } from '../../services/attendance.service';
 import { RouterLink } from '@angular/router';
 import { CardComponent } from "../../widgets/card/card.component";
-// import { WidgetsModule } from '../../widgets/widgets.module';
+import { PaginationComponent } from "../../widgets/pagination/pagination.component";
+//import { WidgetsModule } from '../../widgets/widgets.module';
 
 @Component({
     selector: 'app-attendance',
     standalone: true,
     templateUrl: './attendance.component.html',
     styles: ``,
-    imports: [RouterLink, CardComponent]
+    imports: [RouterLink, CardComponent, PaginationComponent]
 })
 export class AttendanceComponent {
 
