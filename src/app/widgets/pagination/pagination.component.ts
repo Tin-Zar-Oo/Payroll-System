@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-pagination',
-  standalone: true,
-  imports: [],
+  standalone: false,
+
   templateUrl: './pagination.component.html',
   styles:``
 })

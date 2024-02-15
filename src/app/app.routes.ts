@@ -21,6 +21,8 @@ import { LeaveDetailsComponent } from './pages/leave-details/leave-details.compo
 import { PositionComponent } from './pages/position/position.component';
 import { PositionEditComponent } from './pages/position-edit/position-edit.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { SettingsEditComponent } from './pages/settings-edit/settings-edit.component';
 
 export const routes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -87,12 +89,15 @@ export const routes: Routes = [
         {path:'list',component:DepartmentComponent},
         {path:'edit',component:DepartmentEditComponent},
         {path:'details',component:DepartmentDetailsComponent},
-        {path: '', redirectTo: '/position/list', pathMatch: 'full'}
+        {path: '', redirectTo: '/department/list', pathMatch: 'full'}
         ]
 },
-
-{path: '', redirectTo: '/home', pathMatch: 'full'},
-{path: '', redirectTo: '/sign-out', pathMatch: 'full'}
+{path: 'settings', children: [
+    {path:'list',component:SettingsComponent},
+    {path: 'edit', component: SettingsEditComponent},
+    {path: '', redirectTo: '/settings/list', pathMatch: 'full'}
+  ]},
+  {path: '', redirectTo: '/home', pathMatch: 'full'}
 
 
 ];

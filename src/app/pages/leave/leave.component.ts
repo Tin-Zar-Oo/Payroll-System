@@ -9,7 +9,7 @@ import { CardComponent } from "../../widgets/card/card.component";
     standalone: true,
     templateUrl: './leave.component.html',
     styles: ``,
-    imports: [PaginationComponent, CardComponent]
+    imports: []
 })
 export class LeaveComponent {
 

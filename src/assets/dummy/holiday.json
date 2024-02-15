@@ -1,0 +1,26 @@
+[
+    {
+        "date" : "2024-03-01",
+        "holidayId":"001",
+        "holidayName":"Public Holiday",
+        "holidayDescription": "",
+        "total":"3"
+
+    },
+    {
+        "date" : "2024-03-01",
+        "holidayId":"002",
+        "holidayName":"Weekend",
+        "holidayDescription": "",
+        "total":"3"
+
+    },
+    {
+        "date" : "2024-03-01",
+        "holidayId":"003",
+        "holidayName":"National Holiday",
+        "holidayDescription": "",
+        "total":"1"
+
+    }
+]

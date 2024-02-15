@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { WidgetsModule } from '../../widgets/widgets.module';
 
 @Component({
   selector: 'app-payroll',
   standalone: true,
-  imports: [],
+  imports: [WidgetsModule],
   templateUrl: './payroll.component.html',
-  styles:``
+  styles: ``
 })
 export class PayrollComponent {
 

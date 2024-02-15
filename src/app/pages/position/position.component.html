@@ -1,1 +1,50 @@
-<p>position works!</p>
+<app-list-view title="Position Management" icon="bi-briefcase">
+
+    <div controlsBtns>
+      <a class="btn btn-outline-primary me-2">
+        <i class="bi-plus-lg"></i> Create
+      </a>
+      <button class="btn btn-outline-primary me-2">
+        <i class="bi-arrow-down-square"></i> Import
+      </button>
+      <button class="btn btn-outline-primary">
+        <i class="bi-arrow-up-square"></i> Export
+      </button>
+    </div>
+  
+    <form action="#" searchForm class="row">
+      <div class="col-auto">
+        <app-form-group label="Department">
+          <input type="text" class="form-control" placeholder="Department Code">
+        </app-form-group>
+      </div>
+  
+      <div class="col-auto">
+        <app-form-group label="Position">
+          <input type="text" class="form-control" placeholder="Position Code or Name">
+        </app-form-group>
+      </div>
+  
+      <div class="col btn-wrapper">
+        <button class="btn btn-outline-primary">
+          <i class="bi-search"></i> Search
+        </button>
+      </div>
+  
+    </form>
+  
+    <table resultList class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Department</th>
+          <th>Code</th>
+          <th>Position</th>
+          <th>Basic Salary</th>
+          <th>Anual Leaves</th>
+          <th>OT Fees</th>
+          <th></th>
+        </tr>
+      </thead>
+    </table>
+  
+  </app-list-view>

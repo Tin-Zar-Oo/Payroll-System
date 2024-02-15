@@ -6,7 +6,7 @@ import { PaginationComponent } from "../../widgets/pagination/pagination.compone
     standalone: true,
     templateUrl: './employee.component.html',
     styles: ``,
-    imports: [CardComponent,PaginationComponent]
+    imports: []
 })
 export class EmployeeComponent {
 
